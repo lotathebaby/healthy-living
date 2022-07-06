@@ -1,0 +1,416 @@
+body {
+    background: linear-gradient(90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%);
+    font-family: verdana, sans-serif;
+  }
+  h2 {
+    font-size: 1.0em;
+    margin-top: -5px;
+  }
+  header {
+    width: 100%;
+    height: 50px;
+    margin: -5px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main {
+    background-color: #f6fbf4;
+    box-shadow: 0 0 10px;
+    padding: 14px;
+    margin: 25px auto;
+    width: 80%;
+  }
+  nav {
+    width: 50%;
+    height: 50px;
+  }
+  nav > ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  ul > li {
+    list-style: none;
+    display: block;
+    padding: 0.1rem;
+    margin: 0 0.1rem;
+  }
+  nav > ul > li > a {
+    text-decoration: none;
+    color: black;
+    font-family: verdana;
+    font-size: 0.8em;
+    font-weight: 700;
+  }
+  header > button, #button-one {
+    background: linear-gradient(90deg, #020024 0%, #090979 35%, #00d4ff 100%);
+    color: white;
+    font-family: verdana;
+    width: 100px;
+    height: 40px;
+    border: none;
+    margin-top: 12px;
+    border-radius: 5px;
+  }
+  #section-one {
+    display: flex;
+    margin: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-image: url("https://media.istockphoto.com/photos/healthcare-workers-portrait-picture-id1284636209?b=1&k=20&m=1284636209&s=170667a&w=0&h=j_vm0DELoS5ZhzbqYAI60nHoO57jHlrGIyLgqBs6Wyg=");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  #about, .class {
+    flex: 50%;
+  }
+  #about > p {
+    font-family: verdana;
+    font-size: 0.8em;
+    line-height: 2.1;
+  }
+  #about > h2 {
+    font-size: 2.5em;
+    text-shadow: 2px 2px #fff;
+  }
+  #button-two {
+    border: none;
+    width: 130px;
+    height: 35px;
+    border-radius: 5px;
+    margin-left: 15px;
+    font-family: verdana;
+    margin-top: 15px;
+  }
+  .image > img {
+    width: 100%;
+  }
+  #section-two {
+    display: flex;
+    justify-content: center;
+    animation-name: firstanimation;
+    animation-duration: 3s;
+    position: relative;
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-gap: 25px;
+    margin: 15px;
+  }
+  @keyframes firstanimation {
+    0% {left: -1000px;}
+    100% {left: 0;}
+  }
+  .first-div, .second-div, .third-div {
+  border: 2px solid transparent;
+    text-align: center;
+    box-shadow: 0px 0px 10px #333;
+    border: none;
+    padding: 10px;
+    background-color: #fff;
+  }
+  .first-div > i, .second-div > i, .third-div > i {
+    color: #1363df;
+    border: 2px solid transparent;
+    width: 30px;
+    height: 25px;
+    padding-top: 5px;
+    border-radius: 50%;
+    background-color: #e0deca;
+  }
+  .first-div > h4, .second-div > h4, .third-div > h4 {
+    font-family: verdana;
+    font-size: 1.1em;
+  }
+  .first-div > p, .second-div > p, .third-div > p {
+    font-size: 0.8em;
+    line-height: 2.0;
+    font-family: verdana;
+  }
+  .first-div > button, .second-div > button, .third-div > button {
+    border: none;
+    font-size: 0.8em;
+    padding-bottom: 5px;
+    font-family: verdana;
+    font-weight: 700;
+  }
+  @media screen and (min-width: 890px) and (max-width: 1020px) {
+    #about > h2 {
+      font-size: 2em;
+        width: 450px;
+    }
+    #section-one {
+      margin: 20px 10px;
+    }
+    #about {
+      padding: 10px;
+    }
+    #about > p {
+      width: 350px;
+      color: white;
+      line-height: 2.5;
+    }
+    
+  #section-two {
+    display: grid;
+    grid-template-columns: 225px 225px 225px;
+    grid-gap: 15px;
+    margin: 8px;
+  }
+  }
+  @media screen and (min-width: 700px) and (max-width: 888px) {
+    nav > ul > li {
+      margin: 15px 0 0;
+      padding: 2px;
+    }
+    nav > ul {
+      margin: 0px;
+    }
+   nav > ul > li > a {
+      font-size: 12px;
+     font-weight: 400;
+    }
+  header > button {
+    width: 72px;
+    height: 30px;
+  }
+  #section-one {
+    margin: 10px;
+    padding: 15px 5px;
+  }
+  #about {
+    height: 300px;
+    padding: 5px;
+    position: relative;
+    top: 30px;
+  }
+  #about > button {
+    width: 80px;
+    font-size: 12px;
+    height: 30px;
+    margin: 10px;
+  }
+  #about > p {
+   font-size: 13px;
+    color: white;
+    line-height: 2;
+    width: 280px;
+  }
+  #about > h2 {
+    font-size: 26px;
+    text-shadow: 2px 2px #333;
+    color: #fff;
+  }
+  #section-two {
+    display: grid;
+    grid-template-columns: 180px 180px 180px;
+    grid-gap: 10px;
+    margin: 0px;
+  }
+  }
+  @media screen and (min-width: 496px) and (max-width: 699px){
+    h2 {
+    font-size: 1.0rem;
+    margin-top: -5px;
+    padding: -5px;
+    width: 150px;
+  }
+  header {
+    width: 100%;
+    height: 80px;
+    margin: 2px 0;
+    padding: 0px;
+    display: flex;
+  }
+  main {
+    background-color: #f6fbf4;
+    box-shadow: 0 0 10px;
+    margin: 10px auto;
+    width: 100%;
+  }
+  nav {
+    width: 55%;
+  }
+  nav > ul {
+    display: flex;
+    margin-top: 10px;
+  }
+  nav > ul > li > a {
+    font-size: 11px;
+    font-weight: 400;
+  }
+  header > button, #button-one {
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: -5px;
+    paddin: 5px;
+    font-size: 12px;
+  }
+  #section-one {
+    display: flex;
+    margin: 10px 0px;
+    width: 100%;
+    padding: 20px 0;
+    height: 400px;
+    background-image: url("https://media.istockphoto.com/photos/portrait-of-middle-aged-asian-female-doctor-standing-in-hospital-picture-id1271328839?b=1&k=20&m=1271328839&s=170667a&w=0&h=SIMzwoe8eu43OoY4M3ElZCMxW9MgDbZbVzMhh4VY2zM=");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+    #about {
+      padding: 5px;
+    }
+  #about > p {
+    font-size: 14px;
+    line-height: 1.9;
+    width: 300px;
+  }
+  #about > h2 {
+    font-size: 2.1em;
+    color: #000;
+    text-shadow: 2px 2px #fff;
+  }
+  #button-two {
+    width: 85px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 15px;
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  #section-two {
+    display: grid;
+    place-items: center;
+    grid-gap: 10px;
+    padding: 15px 0;
+    grid-template-columns: 250px 250px;
+    justify-content: center;
+    }
+    .third-div {
+      position: relative;
+      left: 55%;
+      margin-top: 15px;
+    }
+  .first-div, .second-div, .third-div {
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px #333;
+    padding: 5px;
+    width: 200px;
+    height: 250px;
+  }
+  }
+  @media screen and (min-width: 375px) and (max-width: 495px) {
+  h2 {
+    font-size: 0.7rem;
+    margin-top: 5px;
+    padding: -5px;
+    width: 150px;
+  }
+  header {
+    width: 100%;
+    height: 80px;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+  }
+  main {
+    background-color: #f6fbf4;
+    box-shadow: 0 0 10px;
+    padding: 2px;
+    margin: 20px auto;
+    width: 100%;
+  }
+  nav {
+    width: 50%;
+  }
+  nav > ul {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2px;
+    margin-left: 5px;
+  }
+  nav > ul > li > a {
+    font-size: 10px;
+    font-weight: 400;
+  }
+  header > button, #button-one {
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: -5px;
+    padding: 5px;
+    font-size: 10px;
+  }
+  #section-one {
+    display: flex;
+    margin: 10px 0px;
+    width: 100%;
+    padding: 15px 0;
+    height: 300px;
+    background-image: url("https://media.istockphoto.com/photos/portrait-of-middle-aged-asian-female-doctor-standing-in-hospital-picture-id1271328839?b=1&k=20&m=1271328839&s=170667a&w=0&h=SIMzwoe8eu43OoY4M3ElZCMxW9MgDbZbVzMhh4VY2zM=");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+    #about {
+      padding: 2px;
+    }
+  #about > p {
+    font-size: 0.7em;
+    line-height: 1.8;
+    width: 250px;
+  }
+  #about > h2 {
+    font-size: 1.9em;
+    color: #000;
+    text-shadow: 2px 2px #fff;
+  }
+  #button-two {
+    width: 70px;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 15px;
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  #section-two {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    justify-content: center;
+    }
+  .first-div, .second-div, .third-div {
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 10px #333;
+    padding: 10px;
+    width: 200px;
+    height: 250px;
+  }
+  }
+    @media screen and (min-width: 1021px) and (max-width: 1200px) {
+      #about {
+        padding: 5px;
+      }    
+      #about > p {
+        font-size: 14px;
+        width: 500px;
+        color: white;
+      }
+      #about > h2 {
+        color: white;
+        text-shadow: 2px 2px #333;
+      }
+    }
+  @media screen and (min-width: 1201px) and (max-width: 1400px) {
+    main {
+      width: 75%;
+    }
+    #about {
+        padding: 10px;
+    }
+    #about > p {
+        width: 500px;
+        font-size: 14px;
+    }
+  }
